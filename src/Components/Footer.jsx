@@ -62,8 +62,12 @@ export default function Footer() {
         <div className="pt-8 border-t border-white/5 flex flex-col items-center">
           <p className="text-gray-500 text-sm">
             2025 Flow جميع الحقوق محفوظة ©
-            Made By Dev | <a href="https://codezeesocialist.vercel.app/">Zeyad Muhammad Khalil</a>
           </p>
+          
+          <p className="text-gray-500 text-sm">
+                        Made By Dev | <a href="https://codezeesocialist.vercel.app/" target='blank'>Zeyad Muhammad Khalil</a>
+          </p>
+        
         </div>
       </div>
     </footer>
