@@ -52,10 +52,10 @@ export default function AboutSection() {
 
           {/* Action Buttons Container */}
           <div className="flex  justify-start gap-5">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white md:px-10 md:py-4 px-6 py-4 rounded-lg font-bold transition-colors md:text-lg shadow-lg">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white md:px-10 md:py-4 px-4 py-3 rounded-lg font-bold transition-colors text-sm md:text-lg shadow-lg">
               احجز استشارتك المجانية الآن
             </button>
-            <button className="bg-white hover:bg-gray-100 text-black md:px-10 md:py-4 px-6 py-4 rounded-lg font-bold transition-colors md:text-lg border border-white">
+            <button className="bg-white hover:bg-gray-100 text-black md:px-10 md:py-4 px-4 py-3 rounded-lg font-bold transition-colors text-sm md:text-lg border border-white">
               عرض الملف التعريفي
             </button>
           </div>

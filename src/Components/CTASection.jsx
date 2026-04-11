@@ -33,7 +33,7 @@ export default function CTASection() {
         </p>
 
         {/* Action Button */}
-        <button className="bg-blue-600 hover:bg-blue-500 text-white cursor-pointer font-black py-4 px-10 md:px-16 rounded-xl text-xl md:text-2xl transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-[0_10px_40px_rgba(37,99,235,0.4)]">
+        <button className="bg-blue-600 hover:bg-blue-500 text-white cursor-pointer font-black py-4 px-10 md:px-16 rounded-xl text-lg md:text-2xl transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-[0_10px_40px_rgba(37,99,235,0.4)]">
           احصل على استشارة مجانية لمشروعك الآن
         </button>
       </div>

@@ -64,10 +64,10 @@ export default function Hero() {
           className="flex flex-col md:flex-row items-center justify-center gap-6 mt-20 animate-slide-up"
           style={{ animationDelay: "0.2s" }}
         >
-          <button className="btn-primary bg-blue-700 text-white font-bold cursor-pointer flex items-center gap-3 px-10 py-4 text-lg">
+          <a href="#services" className="btn-primary bg-blue-700 text-white font-bold cursor-pointer flex items-center gap-3 px-10 py-4 text-lg rounded-xl">
             اطلب خطة مشروعك الان
             <ArrowLeft className="w-5 h-5" />
-          </button>
+          </a>
           <button className="btn outline outline-black cursor-pointer bg-white px-10 py-4 text-lg">
             عرض الملف التعريفي
           </button>

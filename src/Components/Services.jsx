@@ -55,10 +55,10 @@ export default function Services() {
         {/* Header Section */}
         <div className="text-center mb-20 max-w-4xl mx-auto">
           <span className="text-white font-bold text-xl mb-4 block">خدماتنا</span>
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
+          <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
             كل احتياجات مشروعك في مكان واحد
           </h2>
-          <p className="text-white text-lg md:text-xl font-medium leading-relaxed max-w-2xl mx-auto">
+          <p className="text-white text-md md:text-xl font-medium leading-relaxed max-w-2xl mx-auto">
             من التحسين لمحركات البحث حتى الإنتاج الإبداعي، كل خدمة مصممة لتضاعف أرباحك
           </p>
         </div>
