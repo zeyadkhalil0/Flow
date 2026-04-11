@@ -13,12 +13,12 @@ export default function Hero() {
   ];
 
   return (
-    <section className="hero pt-32 pb-20 overflow-hidden 0">
-      <div className="container mx-auto px-6 md:px-12 text-center">
+    <section className="hero pt-32 pb-20 overflow-hidden">
+      <div className="container flex flex-col mx-auto px-6 md:px-12 text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-primary-light rounded-full mb-8 animate-fade-in ">
+        <div className="flex mx-auto items-center h-20 w-full text-center space-x-4 md:w-fit text-blue-500  px-4 py-2 bg-blue-50 text- rounded-full mb-8">
           <CheckCircle2 className="w-5 h-5 text-blue-700" />
-          <span className="hero-cta text-lg text-blue-700 font-bold tracking-widest  wrap-break-words">
+          <span className="hero-cta  text-blue-700 font-bold">
             • نبني العلامة التجارية • نحرّك النمو • نوسّع السوق
           </span>
         </div>
