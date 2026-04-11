@@ -56,9 +56,8 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* Logo */}
         <div>
-          <img src={logo} alt="logo-img" width={"60px"} height={"60px"} />
+          <img src={logo} alt="شعار وكالة فلو للتسويق الرقمي" width={"60px"} height={"60px"} />
         </div>
 
         {/* Mobile Button */}

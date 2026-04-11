@@ -12,7 +12,7 @@ export default function AboutSection() {
       <div className="Bg-img absolute w-full h-full top-0 left-0">
         <img
           src={WhyFlow}
-          alt="Why-flow-img"
+          alt="لماذا تختار فلو للنمو الرقمي وتطوير مبيعات مشروعك"
           className="object-cover object-left  w-full h-full "
         />
       </div>
@@ -23,7 +23,7 @@ export default function AboutSection() {
             ليش فلو؟
           </span>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-8">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-8">
             نساعد مشروعك يحقق نمو حقيقي <br />
             ويضاعف مبيعاته <br />
             <span className="relative inline-block mt-2">
@@ -31,7 +31,7 @@ export default function AboutSection() {
               {/* Blue underline effect from the screenshot */}
               <div className="absolute bottom-2 left-0 w-full h-3 bg-blue-600 -z-10 opacity-80 rounded-full"></div>
             </span>
-          </h1>
+          </h2>
 
           {/* Features List with Custom Checkmarks */}
           <ul className="space-y-5 mb-12">
