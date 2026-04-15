@@ -26,14 +26,13 @@ export default function Navbar() {
 
         {/* Contact Button */}
         <div className="hidden md:block">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg flex items-center gap-2 transition-all group">
+          <button className="bg-primary hover:bg-blue-800 text-white px-2 py-3 border border-white flex items-center gap-2 transition-all group">
             تواصل معنا
-            <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           </button>
         </div>
 
         {/* Links */}
-        <ul className="hidden md:flex items-center gap-10 text-white">
+        <ul className="hidden md:flex items-center gap-10 text-white" dir='rtl'>
           <li>
             <a href="#why-flow" className="hover:text-blue-400 transition">
               ليش فلو
@@ -47,11 +46,6 @@ export default function Navbar() {
           <li>
             <a href="#portfolio" className="hover:text-blue-400 transition">
               عرض الملف التعريفي
-            </a>
-          </li>
-          <li>
-            <a href="#logo" className="text-blue-400 font-bold hover:text-blue-500 transition">
-              أطلب شعار
             </a>
           </li>
         </ul>

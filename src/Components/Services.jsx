@@ -4,14 +4,25 @@ import { Check, ArrowLeft } from 'lucide-react';
 export default function Services() {
   const services = [
     {
-      title: "نصنع الفكرة",
-      subtitle: "AI Creative Production",
+      title: "نحرك النمو",
+      subtitle: "Growth Marketing",
       features: [
-        "إنتاج فيديوهات إعلانية احترافية",
-        "تصميم إعلانات بالذكاء الاصطناعي",
-        "كتابة محتوى إعلاني مقنع",
-        "صور منتجات احترافية",
-        "محتوى سوشيال ميديا متخصص"
+        "إدارة وتحسين الحملات الإعلانية",
+        "إنشاء وإدارة صفحات الهبوط",
+        "تحليل بيانات المبيعات والزوار",
+        "اختبار A/B وتحسين التحويلات",
+        "رفع الأداء بنفس الميزانية"
+      ]
+    },
+       {
+      title: "نرفع الظهور",
+      subtitle: "SEO Optimization",
+      features: [
+        "تحسين المنتجات لمحركات البحث",
+        "تحسين صفحات الفئات والوصف",
+        "بناء روابط خلفية (Off-Page)",
+        "بحث الكلمات المفتاحية وتحليل المنافسين",
+        "تحسين سرعة الموقع والتقنيات"
       ]
     },
     {
@@ -25,28 +36,17 @@ export default function Services() {
         "بناء حضور احترافي ومميز"
       ]
     },
-    {
-      title: "نرفع الظهور",
-      subtitle: "SEO Optimization",
+     {
+      title: "نصنع الفكرة",
+      subtitle: "AI Creative Production",
       features: [
-        "تحسين المنتجات لمحركات البحث",
-        "تحسين صفحات الفئات والوصف",
-        "بناء روابط خلفية (Off-Page)",
-        "بحث الكلمات المفتاحية وتحليل المنافسين",
-        "تحسين سرعة الموقع والتقنيات"
+        "إنتاج فيديوهات إعلانية احترافية",
+        "تصميم إعلانات بالذكاء الاصطناعي",
+        "كتابة محتوى إعلاني مقنع",
+        "صور منتجات احترافية",
+        "محتوى سوشيال ميديا متخصص"
       ]
     },
-    {
-      title: "نحرك النمو",
-      subtitle: "Growth Marketing",
-      features: [
-        "إدارة وتحسين الحملات الإعلانية",
-        "إنشاء وإدارة صفحات الهبوط",
-        "تحليل بيانات المبيعات والزوار",
-        "اختبار A/B وتحسين التحويلات",
-        "رفع الأداء بنفس الميزانية"
-      ]
-    }
   ];
 
   return (
@@ -54,11 +54,11 @@ export default function Services() {
       <div className="container mx-auto px-6 relative z-10">
         {/* Header Section */}
         <div className="text-center mb-20 max-w-4xl mx-auto">
-          <span className="text-white font-bold text-xl mb-4 block">خدماتنا</span>
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
+          <span className="text-white font-bold text-2xl mb-8 block">خدماتنا</span>
+          <h2 className="text-2xl md:text-4xl font-bold text-white mb-8 leading-tight">
             كل احتياجات مشروعك في مكان واحد
           </h2>
-          <p className="text-white text-md md:text-xl font-medium leading-relaxed max-w-2xl mx-auto">
+          <p className="text-white text-sm font-medium leading-relaxed max-w-2xl mx-auto">
             من التحسين لمحركات البحث حتى الإنتاج الإبداعي، كل خدمة مصممة لتضاعف أرباحك
           </p>
         </div>
@@ -71,21 +71,21 @@ export default function Services() {
             >
               {/* Logo text at top - Aligned Right */}
               <div className="w-full flex justify-start mb-8">
-                 <span className="text-blue-500 font-bold text-sm tracking-widest opacity-80">Flow</span>
+                 <span className="text-primary font-bold text-sm tracking-widest opacity-80">Flow</span>
               </div>
               
               {/* Title Section */}
               <div className='w-full flex flex-col items-center md:items-start'>
-              <h3 className="text-4xl font-bold text-white mb-6 tracking-tight">{service.title}</h3>
-              <p className="text-[10px] font-bold text-blue-400/50 mb-10 uppercase tracking-[0.2em]">{service.subtitle}</p>
+              <h3 className="text-2xl font-bold text-white mb-6 tracking-tight">{service.title}</h3>
+              <p className="text-[10px] font-bold text-service-primary mb-10 uppercase tracking-[0.2em]">{service.subtitle}</p>
               </div>
               
               {/* Features List - RTL order */}
               <ul className="space-y-5 mb-12 w-full">
                 {service.features.map((feature, fIdx) => (
                   <li key={fIdx} className="text-gray-200 flex items-center justify-start gap-3 text-sm font-medium group/item hover:text-white transition-colors">
-                    <div className="shrink-0 w-6 h-6 rounded-full bg-blue-600/20 flex items-center justify-center ring-1 ring-blue-500/20">
-                      <Check className="w-3.5 h-3.5 text-blue-500" strokeWidth={3} />
+                    <div className="shrink-0 w-6 h-6 rounded-full bg-blue-600/20 flex items-center justify-center ring-1 ring-primary">
+                      <Check className="w-3.5 h-3.5 text-primary" strokeWidth={3} />
                     </div>
                     <span className="text-right leading-relaxed flex-1">{feature}</span>
                   </li>
@@ -93,8 +93,8 @@ export default function Services() {
               </ul>
               
               {/* Action Button - RTL order (Arrow on left) */}
-              <button className="mt-auto cursor-pointer w-full py-4 rounded-2xl bg-blue-600 text-white font-bold hover:bg-blue-500 shadow-lg shadow-blue-600/20 hover:shadow-blue-600/40 transition-all duration-300 flex items-center justify-center gap-2 group/btn">
-                <span className="text-sm">أطلب خطة مشروعك الآن</span>
+              <button className="mt-auto cursor-pointer w-full py-2 px-4 rounded-xl bg-primary text-white font-bold hover:bg-secondry shadow-lg shadow-blue-600/20 hover:shadow-blue-600/40 transition-all duration-300 flex items-center justify-center gap-2 group/btn">
+                <span className="service-action-btn">أطلب خطة مشروعك الآن</span>
                 <ArrowLeft className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
               </button>
             </div>

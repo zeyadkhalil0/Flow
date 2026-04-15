@@ -1,23 +1,39 @@
 @import "tailwindcss";
-/* Google Font */
-*{
-      font-family: "Amiri", serif;
-  font-weight: 600;
+/* Font Configx1 */
+* {
+  font-family: "MyFont", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("./assets/Font/ZAIN-mob.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
 }
 
-.hero{
-    background: #fdfaff;
-background: linear-gradient(335deg, rgba(253, 250, 255, 0.703) 10%, rgba(48, 29, 253, 0.222) 57%, rgb(255, 255, 255) 80%);
+@theme {
+  --color-primary: #0015ff;
+  --color-secondry: #3344FF;
+  --color-service-primary : #CCD0FF;
+}
+/* Hero Section */
+.hero-value{
+  font-weight: 100;
 }
 
-
-#services{
-    background-color: #020617; 
-  
+#services {
+  background-color: #020617;
   background-image: radial-gradient(
-    circle at 50% 50%, 
-    rgba(30, 64, 175, 0.561) 0%,   
-    rgba(2, 6, 23, 1) 70%        
+    circle at 50% 50%,
+    rgba(30, 64, 175, 0.561) 0%,
+    rgba(2, 6, 23, 1) 70%
   );
 }
+
+.service-action-btn{
+  font-size: 10px;
+  font-weight: 100;
+}
+
+

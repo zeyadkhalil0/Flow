@@ -31,8 +31,8 @@ export default function FAQ() {
     <section id="faq" className="py-24 bg-[#020617] text-white overflow-hidden" dir="rtl">
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="text-center mb-16">
-          <p className="text-gray-400 text-lg mb-4">عندك استفسار؟</p>
-          <h2 className="text-5xl md:text-6xl font-bold mb-8 tracking-tight">
+          <p className="text-white text-xl md:2xl mb-6">عندك استفسار؟</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 tracking-tight">
             حنا نحب اللي <span className="text-white">يطقطق!</span>
           </h2>
         </div>
@@ -49,7 +49,7 @@ export default function FAQ() {
                   {/* Blue Bullet Point */}
                   <div className="w-2.5 h-2.5 rounded-full bg-blue-600 shrink-0 shadow-[0_0_12px_rgba(37,99,235,1)]"></div>
                   
-                  <span className="text-2xl md:text-3xl font-bold text-white text-right leading-tight">
+                  <span className="text-xl md:text-2xl font-bold text-white text-right leading-tight">
                     {faq.q}
                   </span>
                 </div>

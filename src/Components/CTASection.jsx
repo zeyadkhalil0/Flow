@@ -11,13 +11,13 @@ export default function CTASection() {
           alt="CTA Background" 
           className="w-full h-full object-cover"
         />
-        {/* Dark Overlay for text readability */}
-        <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]"></div>
       </div>
+
+      <div className="overlay absolute inset-0 bg-black/40"></div>
 
       <div className="container mx-auto px-6 relative z-10 text-center">
         {/* Top small text */}
-        <p className="text-blue-600 font-bold text-lg md:text-xl mb-6 tracking-wide drop-shadow-sm">
+        <p className="text-primary font-bold text-lg md:text-xl mb-6 tracking-wide drop-shadow-sm">
           الوقت يمشي والمنافسة تكبر
         </p>
 
@@ -33,7 +33,7 @@ export default function CTASection() {
         </p>
 
         {/* Action Button */}
-        <button className="bg-blue-600 hover:bg-blue-500 text-white cursor-pointer font-black py-4 px-10 md:px-16 rounded-xl text-lg md:text-2xl transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-[0_10px_40px_rgba(37,99,235,0.4)]">
+        <button className="bg-primary hover:bg-secondry text-white cursor-pointer font-black py-4 px-10 md:px-16 rounded-xl text-lg md:text-2xl transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-[0_10px_40px_rgba(37,99,235,0.4)]">
           احصل على استشارة مجانية لمشروعك الآن
         </button>
       </div>
