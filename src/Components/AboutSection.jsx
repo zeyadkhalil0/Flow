@@ -1,6 +1,7 @@
 import React from "react";
 import { CheckCircle, ArrowLeft } from "lucide-react";
 import WhyFlow from "../assets/Why-flow.webp";
+import WhyFlowMobile from "../assets/Why-flow-mobile.png"
 
 export default function AboutSection() {
   return (
@@ -13,7 +14,13 @@ export default function AboutSection() {
         <img
           src={WhyFlow}
           alt="لماذا تختار فلو للنمو الرقمي وتطوير مبيعات مشروعك"
-          className="object-cover object-left  w-full h-full "
+          className="hidden md:block object-cover object-left  w-full h-full "
+        />
+
+        <img
+          src={WhyFlowMobile}
+          alt="لماذا تختار فلو للنمو الرقمي وتطوير مبيعات مشروعك"
+          className="block md:hidden object-cover w-full h-full object-bottom-left"
         />
       </div>
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-1 gap-12 items-center relative z-10">
@@ -23,9 +30,8 @@ export default function AboutSection() {
             ليش فلو؟
           </span>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-8 w-8/12">
-            نساعد مشروعك يحقق نمو حقيقي 
-            ويضاعف مبيعاته <br/>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-8 md:w-8/12">
+            نساعد مشروعك يحقق نمو حقيقي ويضاعف مبيعاته <br />
             <span className="relative text-primary inline-block mt-2">
               بدون هدر ميزانيته
             </span>
@@ -50,12 +56,12 @@ export default function AboutSection() {
 
           {/* Action Buttons Container */}
           <div className="flex  justify-start gap-5">
-            <button className="bg-primary hover:bg-blue-700 text-white md:px-10 md:py-4 px-4 py-3 border border-white cursor-pointer font-bold transition-colors text-sm md:text-lg shadow-lg">
+            <a href="https://api.whatsapp.com/send?phone=966565593442&text=%D8%AD%D9%8A%D8%A7%D9%83%20%D8%A7%D9%84%D9%84%D9%87%0A%20%D9%85%D8%B9%D9%83%20%D9%81%D8%B1%D9%8A%D9%82%20%D9%81%D9%84%D9%88%20%D9%86%D8%B4%D8%AA%D8%BA%D9%84%20%D9%85%D8%B9%20%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AC%D8%B1%20%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9%20%D8%B9%D9%84%D9%89%20%D8%A8%D9%86%D8%A7%D8%A1%20%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D9%86%D9%85%D9%88%20%D8%AA%D8%B1%D9%81%D8%B9%20%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%20%D9%88%D8%AA%D8%B6%D8%A8%D8%B7%20%D8%A7%D9%84%D8%A3%D8%B1%D8%A8%D8%A7%D8%AD.%20%D8%B1%D8%A7%D8%B3%D9%84%D9%86%D8%A7%20%D8%A7%D9%84%D8%AD%D9%8A%D9%86%20%D9%88%D8%A3%D8%AD%D8%B5%D9%84%20%D8%B9%D9%84%D9%89%20%D8%AF%D9%84%D9%8A%D9%84%D9%83%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%86%D9%8A%20%D9%84%D8%B1%D9%81%D8%B9%20%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%20%D9%85%D8%AA%D8%AC%D8%B1%D9%83%20%D8%A8%D8%AF%D9%88%D9%86%20%D9%87%D8%AF%D8%B1%20%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%A9" target="blank" className="bg-primary hover:bg-blue-700 text-white md:px-10 md:py-4 px-4 py-3 border border-white cursor-pointer font-bold transition-colors text-sm md:text-lg shadow-lg">
               احجز استشارتك المجانية الآن
-            </button>
-            <button className="bg-white hover:bg-gray-100 text-black md:px-10 md:py-4 px-4 py-3 cursor-pointer font-bold transition-colors text-sm md:text-lg border border-white">
+            </a>
+            <a href="https://drive.google.com/drive/folders/1Y-cImKI3ODxiplOrXy6kVr-1cGddYgaa?usp=sharing" target="blank" className="bg-white hover:bg-gray-100 text-black md:px-10 md:py-4 px-4 py-3 cursor-pointer font-bold transition-colors text-sm md:text-lg border border-white">
               عرض الملف التعريفي
-            </button>
+            </a>
           </div>
         </div>
       </div>

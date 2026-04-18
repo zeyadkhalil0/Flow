@@ -43,6 +43,8 @@ export default function FAQ() {
               <button 
                 onClick={() => setOpenIndex(openIndex === idx ? -1 : idx)}
                 className="w-full flex items-center justify-between py-6 group-hover:opacity-80 transition-all duration-300 border-b border-white/5"
+                aria-expanded={openIndex === idx}
+                aria-controls={`faq-answer-${idx}`}
               >
                 {/* Right side: Bullet & Question */}
                 <div className="flex items-center gap-6">
@@ -61,7 +63,10 @@ export default function FAQ() {
               </button>
 
               {/* Answer Section */}
-              <div className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === idx ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
+              <div 
+                id={`faq-answer-${idx}`}
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === idx ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'}`}
+              >
                 <div className="pr-6 pl-14 text-lg text-gray-400 leading-relaxed border-r-2 border-blue-600/30">
                   {faq.a}
                 </div>

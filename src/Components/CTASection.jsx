@@ -1,5 +1,6 @@
 import React from 'react';
 import ctaBg from '../assets/CTA.webp';
+import CTAmobile from "../assets/CTA-mobile.png"
 
 export default function CTASection() {
   return (
@@ -9,11 +10,17 @@ export default function CTASection() {
         <img 
           src={ctaBg} 
           alt="CTA Background" 
-          className="w-full h-full object-cover"
+          className="hidden md:block w-full h-full object-cover"
         />
+
+          <img
+                  src={CTAmobile}
+                  alt="لماذا تختار فلو للنمو الرقمي وتطوير مبيعات مشروعك"
+                  className="block md:hidden object-cover w-full h-full object-bottom-left"
+                />
       </div>
 
-      <div className="overlay absolute inset-0 bg-black/40"></div>
+      <div className="overlay absolute inset-0 md:bg-black/40"></div>
 
       <div className="container mx-auto px-6 relative z-10 text-center">
         {/* Top small text */}
@@ -22,9 +29,10 @@ export default function CTASection() {
         </p>
 
         {/* Main Heading */}
-        <h2 className="text-4xl md:text-7xl font-black text-white leading-tight mb-8 drop-shadow-xl">
-          کم قاعد تخسر بدون ما تدري؟ <br />
+        <h2 className="CTA-text text-3xl md:text-7xl font-black text-white leading-tight mb-8 drop-shadow-xl w-full">
+          کم قاعد تخسر بدون ما تدري؟ 
           كل مشروع ناجح يبدأ بخطوة
+          <br />
         </h2>
 
         {/* Subtitle */}
@@ -33,9 +41,9 @@ export default function CTASection() {
         </p>
 
         {/* Action Button */}
-        <button className="bg-primary hover:bg-secondry text-white cursor-pointer font-black py-4 px-10 md:px-16 rounded-xl text-lg md:text-2xl transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-[0_10px_40px_rgba(37,99,235,0.4)]">
+        <a href='https://api.whatsapp.com/send?phone=966565593442&text=%D8%AD%D9%8A%D8%A7%D9%83%20%D8%A7%D9%84%D9%84%D9%87%0A%20%D9%85%D8%B9%D9%83%20%D9%81%D8%B1%D9%8A%D9%82%20%D9%81%D9%84%D9%88%20%D9%86%D8%B4%D8%AA%D8%BA%D9%84%20%D9%85%D8%B9%20%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AC%D8%B1%20%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9%20%D8%B9%D9%84%D9%89%20%D8%A8%D9%86%D8%A7%D8%A1%20%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D9%86%D9%85%D9%88%20%D8%AA%D8%B1%D9%81%D8%B9%20%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%20%D9%88%D8%AA%D8%B6%D8%A8%D8%B7%20%D8%A7%D9%84%D8%A3%D8%B1%D8%A8%D8%A7%D8%AD.%20%D8%B1%D8%A7%D8%B3%D9%84%D9%86%D8%A7%20%D8%A7%D9%84%D8%AD%D9%8A%D9%86%20%D9%88%D8%A3%D8%AD%D8%B5%D9%84%20%D8%B9%D9%84%D9%89%20%D8%AF%D9%84%D9%8A%D9%84%D9%83%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%86%D9%8A%20%D9%84%D8%B1%D9%81%D8%B9%20%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%20%D9%85%D8%AA%D8%AC%D8%B1%D9%83%20%D8%A8%D8%AF%D9%88%D9%86%20%D9%87%D8%AF%D8%B1%20%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%A9' target='blank' className="bg-primary hover:bg-secondry text-white cursor-pointer font-black py-4 px-10 md:px-16 rounded-xl text-lg md:text-2xl transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-[0_10px_40px_rgba(37,99,235,0.4)]">
           احصل على استشارة مجانية لمشروعك الآن
-        </button>
+        </a>
       </div>
     </section>
   );
