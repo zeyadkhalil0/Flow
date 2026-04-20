@@ -32,18 +32,17 @@ export default function Hero() {
         <p className="text-gray-800 text-lg font-medium">وفر 15% من تكاليفك الشهرية</p>
         {/* Stats Grid */}
         <div
-          className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto pt-10  animate-fade-in"
+          className="grid grid-cols-3 gap-14 max-w-5xl mx-auto pt-10  animate-fade-in"
           style={{ animationDelay: "0.4s" }}
         >
           {stats.map((stat, idx) => (
-            <div key={idx} className="flex flex-col items-center">
-              <span className="hero-value text-4xl text-primary mb-2 ">
+            <div key={idx} className="flex  flex-col items-center">
+              <span className="hero-value md:text-4xl text-primary mb-2 ">
                 {stat.value}
               </span>
-              <span className="text-lg font-bold text-secondary mb-1">
+              <span className="text-[10px] md:text-lg font-bold text-secondary mb-1">
                 {stat.label}
               </span>
-              <span className="text-sm text-gray-500">{stat.sub}</span>
             </div>
           ))}
         </div>

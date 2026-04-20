@@ -44,7 +44,7 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#portfolio" className="hover:text-blue-400 transition">
+            <a href="https://drive.google.com/drive/folders/1Y-cImKI3ODxiplOrXy6kVr-1cGddYgaa" target='blank' className="hover:text-blue-400 transition">
               عرض الملف التعريفي
             </a>
           </li>

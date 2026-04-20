@@ -23,14 +23,14 @@ export default function AboutSection() {
           className="block md:hidden object-cover w-full h-full object-bottom-left"
         />
       </div>
-      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-1 gap-12 items-center relative z-10">
+      <div className="container md:w-full w-7/12 md:mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-1 gap-12 items-center relative z-10">
         {/* Right Column: Arabic Text Content */}
         <div className="order-2 md:order-1 text-right" dir="rtl">
           <span className="text-gray-100 text-lg mb-6 block font-medium">
             ليش فلو؟
           </span>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-8 md:w-8/12">
+          <h2 className="text-md md:text-4xl lg:text-5xl font-black leading-tight mb-8 md:w-8/12">
             نساعد مشروعك يحقق نمو حقيقي ويضاعف مبيعاته <br />
             <span className="relative text-primary inline-block mt-2">
               بدون هدر ميزانيته
@@ -47,7 +47,7 @@ export default function AboutSection() {
               <li key={index} className="flex items-start justify-start gap-4">
                 {/* Styled Checkmark */}
                 <span className="text-primary text-xl font-bold mt-1">✓</span>
-                <span className="text-gray-200 text-lg md:text-xl leading-relaxed">
+                <span className="text-gray-200 text-[10px] md:text-xl leading-relaxed">
                   {text}
                 </span>
               </li>
@@ -59,14 +59,14 @@ export default function AboutSection() {
             <a
               href="https://api.whatsapp.com/send?phone=966565593442&text=%D8%AD%D9%8A%D8%A7%D9%83%20%D8%A7%D9%84%D9%84%D9%87%0A%20%D9%85%D8%B9%D9%83%20%D9%81%D8%B1%D9%8A%D9%82%20%D9%81%D9%84%D9%88%20%D9%86%D8%B4%D8%AA%D8%BA%D9%84%20%D9%85%D8%B9%20%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AC%D8%B1%20%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9%20%D8%B9%D9%84%D9%89%20%D8%A8%D9%86%D8%A7%D8%A1%20%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D9%86%D9%85%D9%88%20%D8%AA%D8%B1%D9%81%D8%B9%20%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%20%D9%88%D8%AA%D8%B6%D8%A8%D8%B7%20%D8%A7%D9%84%D8%A3%D8%B1%D8%A8%D8%A7%D8%AD.%20%D8%B1%D8%A7%D8%B3%D9%84%D9%86%D8%A7%20%D8%A7%D9%84%D8%AD%D9%8A%D9%86%20%D9%88%D8%A3%D8%AD%D8%B5%D9%84%20%D8%B9%D9%84%D9%89%20%D8%AF%D9%84%D9%8A%D9%84%D9%83%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%86%D9%8A%20%D9%84%D8%B1%D9%81%D8%B9%20%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%20%D9%85%D8%AA%D8%AC%D8%B1%D9%83%20%D8%A8%D8%AF%D9%88%D9%86%20%D9%87%D8%AF%D8%B1%20%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%A9"
               target="blank"
-              className="bg-primary hover:bg-blue-700 w-fit text-white md:px-10 md:py-4 px-2 py-2 border border-white cursor-pointer  transition-colors text-sm md:text-lg shadow-lg"
+              className="bg-primary hover:bg-blue-700 w-fit text-white md:px-10 md:py-4 px-2 py-2 border border-white cursor-pointer  transition-colors text-[10px] md:text-lg shadow-lg"
             >
               احجز استشارتك المجانية الآن
             </a>
             <a
               href="https://drive.google.com/drive/folders/1Y-cImKI3ODxiplOrXy6kVr-1cGddYgaa?usp=sharing"
               target="blank"
-              className="bg-white hover:bg-gray-100 w-fit text-black md:px-10 md:py-4 px-2 py-2 cursor-pointer font-bold transition-colors text-sm md:text-lg border border-white"
+              className="hidden md:block bg-white hover:bg-gray-100 w-fit text-black md:px-10 md:py-4 px-2 py-2 cursor-pointer font-bold transition-colors text-[8px] md:text-lg border border-white"
             >
               عرض الملف التعريفي
             </a>

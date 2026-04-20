@@ -32,7 +32,7 @@ export default function FAQ() {
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="text-center mb-16">
           <p className="text-white text-xl md:2xl mb-6">عندك استفسار؟</p>
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 tracking-tight">
+          <h2 className="text-2xl md:text-5xl font-bold mb-8 tracking-tight">
             حنا نحب اللي <span className="text-white">يطقطق!</span>
           </h2>
         </div>
@@ -42,23 +42,23 @@ export default function FAQ() {
             <div key={idx} className="group">
               <button 
                 onClick={() => setOpenIndex(openIndex === idx ? -1 : idx)}
-                className="w-full flex items-center justify-between py-6 group-hover:opacity-80 transition-all duration-300 border-b border-white/5"
+                className="w-full flex cursor-pointer items-center justify-between py-6 group-hover:opacity-80 transition-all duration-300 border-b border-white/5"
                 aria-expanded={openIndex === idx}
                 aria-controls={`faq-answer-${idx}`}
               >
                 {/* Right side: Bullet & Question */}
                 <div className="flex items-center gap-6">
                   {/* Blue Bullet Point */}
-                  <div className="w-2.5 h-2.5 rounded-full bg-blue-600 shrink-0 shadow-[0_0_12px_rgba(37,99,235,1)]"></div>
+                  <div className="w-2.5 h-2.5  rounded-full bg-blue-600 shrink-0 shadow-[0_0_12px_rgba(37,99,235,1)]"></div>
                   
-                  <span className="text-xl md:text-2xl font-bold text-white text-right leading-tight">
+                  <span className="text-lg md:text-2xl font-bold text-white text-right leading-tight">
                     {faq.q}
                   </span>
                 </div>
 
                 {/* Left side: Arrow icon */}
                 <div className={`transition-transform duration-500 shrink-0 ml-4 ${openIndex === idx ? 'rotate-180 opacity-100' : 'opacity-40'}`}>
-                   <ArrowDownCircle className="w-10 h-10 text-white" strokeWidth={1} />
+                   <ArrowDownCircle className="w-6 h-6 text-white" strokeWidth={1} />
                 </div>
               </button>
 
@@ -67,7 +67,7 @@ export default function FAQ() {
                 id={`faq-answer-${idx}`}
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === idx ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'}`}
               >
-                <div className="pr-6 pl-14 text-lg text-gray-400 leading-relaxed border-r-2 border-blue-600/30">
+                <div className="pr-6 pl-14 text-sm md:text-lg text-gray-400 leading-relaxed border-r-2 border-blue-600/30">
                   {faq.a}
                 </div>
               </div>
