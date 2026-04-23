@@ -26,11 +26,11 @@ export default function AboutSection() {
       <div className="container md:w-full w-7/12 md:mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-1 gap-12 items-center relative z-10">
         {/* Right Column: Arabic Text Content */}
         <div className="order-2 md:order-1 text-right" dir="rtl">
-          <span className="text-gray-100 text-lg mb-6 block font-medium">
+          <span className="text-gray-100 text-xl mb-8 block font-medium">
             ليش فلو؟
           </span>
 
-          <h2 className="text-md md:text-4xl lg:text-5xl font-black leading-tight mb-8 md:w-8/12">
+          <h2 className="text-md md:text-4xl lg:text-5xl font-black leading-tight mb-6 md:w-8/12">
             نساعد مشروعك يحقق نمو حقيقي ويضاعف مبيعاته <br />
             <span className="relative text-primary inline-block mt-2">
               بدون هدر ميزانيته
@@ -38,7 +38,7 @@ export default function AboutSection() {
           </h2>
 
           {/* Features List with Custom Checkmarks */}
-          <ul className="space-y-5 mb-12">
+          <ul className="space-y-2 mb-12">
             {[
               "بناء نظام تسويق يحول كل زيارة إلى فرصة بيع حقيقية",
               "تحسين أداء الإعلانات لزيادة الأرباح بنفس الميزانية",

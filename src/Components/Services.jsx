@@ -50,11 +50,11 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-24 relative overflow-hidden" dir="rtl">
+    <section id="services" className="py-12 relative overflow-hidden" dir="rtl">
       <div className="container mx-auto px-6 relative z-10">
         {/* Header Section */}
-        <div className="text-center mb-20 max-w-4xl mx-auto">
-          <span className="text-white font-bold text-2xl mb-8 block">خدماتنا</span>
+        <div className="text-center mb-12 max-w-4xl mx-auto">
+          <span className="text-white font-bold text-2xl mb-4 block">خدماتنا</span>
           <h2 className="text-2xl md:text-4xl font-bold text-white mb-8 leading-tight">
             كل احتياجات مشروعك في مكان واحد
           </h2>
@@ -75,7 +75,7 @@ export default function Services() {
               </div>
               
               {/* Title Section */}
-              <div className='w-full flex flex-col items-center md:items-start'>
+              <div className='w-full flex flex-col items-start'>
               <h3 className="text-2xl font-bold text-white mb-6 tracking-tight">{service.title}</h3>
               <p className="text-[10px] font-bold text-service-primary mb-10 uppercase tracking-[0.2em]">{service.subtitle}</p>
               </div>
@@ -84,8 +84,8 @@ export default function Services() {
               <ul className="space-y-5 mb-12 w-full">
                 {service.features.map((feature, fIdx) => (
                   <li key={fIdx} className="text-gray-200 flex items-center justify-start gap-3 text-sm font-medium group/item hover:text-white transition-colors">
-                    <div className="shrink-0 w-6 h-6 rounded-full bg-blue-600/20 flex items-center justify-center ring-1 ring-primary">
-                      <Check className="w-3.5 h-3.5 text-primary" strokeWidth={3} />
+                    <div className="shrink-0 w-6 h-6 rounded-full flex items-center justify-center ">
+                      <Check className="w-10 h-10 text-primary"  />
                     </div>
                     <span className="text-right leading-relaxed flex-1">{feature}</span>
                   </li>
@@ -93,7 +93,7 @@ export default function Services() {
               </ul>
               
               {/* Action Button - RTL order (Arrow on left) */}
-              <button className="mt-auto cursor-pointer w-full py-2 px-4 rounded-xl bg-primary text-white font-bold hover:bg-secondry shadow-lg shadow-blue-600/20 hover:shadow-blue-600/40 transition-all duration-300 flex items-center justify-center gap-2 group/btn">
+              <button className="mt-aut  cursor-pointer w-full py-2 px-4 rounded-xl bg-primary text-white font-bold hover:bg-secondry shadow-lg shadow-blue-600/20 hover:shadow-blue-600/40 transition-all duration-300 flex items-center justify-center gap-2 group/btn">
                 <a href='https://api.whatsapp.com/send?phone=966565593442&text=%D8%AD%D9%8A%D8%A7%D9%83%20%D8%A7%D9%84%D9%84%D9%87%0A%20%D9%85%D8%B9%D9%83%20%D9%81%D8%B1%D9%8A%D9%82%20%D9%81%D9%84%D9%88%20%D9%86%D8%B4%D8%AA%D8%BA%D9%84%20%D9%85%D8%B9%20%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AC%D8%B1%20%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9%20%D8%B9%D9%84%D9%89%20%D8%A8%D9%86%D8%A7%D8%A1%20%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D9%86%D9%85%D9%88%20%D8%AA%D8%B1%D9%81%D8%B9%20%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%20%D9%88%D8%AA%D8%B6%D8%A8%D8%B7%20%D8%A7%D9%84%D8%A3%D8%B1%D8%A8%D8%A7%D8%AD.%20%D8%B1%D8%A7%D8%B3%D9%84%D9%86%D8%A7%20%D8%A7%D9%84%D8%AD%D9%8A%D9%86%20%D9%88%D8%A3%D8%AD%D8%B5%D9%84%20%D8%B9%D9%84%D9%89%20%D8%AF%D9%84%D9%8A%D9%84%D9%83%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%86%D9%8A%20%D9%84%D8%B1%D9%81%D8%B9%20%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%20%D9%85%D8%AA%D8%AC%D8%B1%D9%83%20%D8%A8%D8%AF%D9%88%D9%86%20%D9%87%D8%AF%D8%B1%20%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%A9' target='blank' className="service-action-btn">أطلب خطة مشروعك الآن</a>
                 <ArrowLeft className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
               </button>
