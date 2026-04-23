@@ -64,10 +64,9 @@ export default function Footer() {
             2025 Flow جميع الحقوق محفوظة ©
           </p>
           
-          <p className="text-gray-100 text-sm">
+          <p className="text-gray-100 text-sm opacity-0">
                         Made By Dev | <a href="https://codezeesocialist.vercel.app/" target='blank'>Zeyad Muhammad Khalil</a>
           </p>
-        
         </div>
       </div>
     </footer>
