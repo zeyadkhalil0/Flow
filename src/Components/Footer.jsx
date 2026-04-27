@@ -9,19 +9,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-20 text-right">
           
           {/* Info & Contact Section (RIGHT) */}
-          <div className="flex flex-col items-start order-1">
+          <div className="flex flex-col items-center order-1">
             <h3 className="text-4xl font-bold mb-8 tracking-tighter">FlOW</h3>
             
             <h4 className="text-2xl font-bold mb-6"> <a href="https://wa.link/cbcz1x" target='blank'>تواصل معنا</a></h4>
             <div className="space-y-4 w-full">
-              <a href="tel:+966565593442" className="flex items-center justify-start gap-3 text-gray-400 hover:text-blue-500 transition-colors group">
+              <a href="tel:+966565593442" className="flex items-center justify-center gap-3 text-gray-400 hover:text-blue-500 transition-colors group">
                 <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white shadow-[0_0_15px_rgba(37,99,235,0.4)]">
                   <Phone size={18} />
                 </div>
                 <a href='https://wa.link/cbcz1x' target='blank' dir="ltr" className="text-lg">+966 565593442</a>
               </a>
               
-              <a href="mailto:flowsystem.gmb@gmail.com" className="flex items-center justify-start gap-3 text-gray-400 hover:text-blue-500 transition-colors group">
+              <a href="mailto:flowsystem.gmb@gmail.com" className="flex items-center justify-center gap-3 text-gray-400 hover:text-blue-500 transition-colors group">
                 <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white shadow-[0_0_15px_rgba(37,99,235,0.4)]">
                    <Mail size={18} />
                 </div>
